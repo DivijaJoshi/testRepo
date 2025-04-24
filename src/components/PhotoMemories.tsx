@@ -322,7 +322,7 @@ export default function PhotoMemories() {
   };
 
   return (
-    <div className="min-h-screen bg-[#E6E6FA] py-12 px-4 overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-pink-900 to-blue-900 py-12 px-4 overflow-hidden relative">
       {/* Floating stars background */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
@@ -353,10 +353,10 @@ export default function PhotoMemories() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl font-bold text-purple-800 mb-4">
+          <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-4">
             Our Floating Memories
           </h2>
-          <p className="text-xl text-purple-700">Some floating chaos for you..</p>
+          <p className="text-xl text-white/80">Some floating chaos for you..</p>
         </motion.div>
 
         <div ref={containerRef} className="relative h-[80vh] w-full">
@@ -364,7 +364,7 @@ export default function PhotoMemories() {
           {texts.map((text) => (
             <motion.div
               key={text.id}
-              className="absolute text-purple-800 font-bold text-lg cursor-default select-none"
+              className="absolute text-white/80 font-bold text-lg cursor-default select-none"
               style={{
                 left: text.position.x,
                 top: text.position.y,
