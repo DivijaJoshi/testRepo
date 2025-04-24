@@ -13,7 +13,6 @@ import Image from 'next/image';
 import VirtualWishJar from '@/components/VirtualWishJar';
 import ComicStrip from '@/components/ComicStrip';
 import TreasureHunt from '@/components/TreasureHunt';
-import LoveReasons from '@/components/LoveReasons';
 import ARFilter from '@/components/ARFilter';
 import VideoMontage from '@/components/VideoMontage';
 import DivijaChatbot from '@/components/DivijaChatbot';
